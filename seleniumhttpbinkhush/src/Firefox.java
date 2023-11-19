@@ -14,6 +14,5 @@ public class Firefox {
         System.out.println(titleOfPage);
         driver.manage().window().minimize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        System.out.println(driver.getPageSource());
     }
 }

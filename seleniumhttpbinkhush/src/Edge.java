@@ -9,11 +9,11 @@ public class Edge {
         WebDriver driver = new EdgeDriver();
         driver.get("https://httpbin.org/#/");
         String titleOfPage = driver.getTitle();
-        System.out.println(titleOfPage);
         String currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
+        System.out.println(titleOfPage);
         driver.manage().window().minimize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        System.out.println(driver.getPageSource());
+
     }
 }
